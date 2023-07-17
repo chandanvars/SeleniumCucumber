@@ -1,15 +1,15 @@
-package stepDefinitions;
+package com.cucumberTraining.stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import login.Login;
+import pages.Login;
 
 public class MyStepdefs extends Login {
     @Given("Lambda test home page is opened")
     public void lambdaTestHomePageIsOpened() {
-        setUp();
+        openUrl();
     }
 
     @When("User enter {string} and {string}")
